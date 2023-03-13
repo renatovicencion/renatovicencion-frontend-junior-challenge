@@ -23,6 +23,7 @@ const TodoListItem = ({ id, onCheck, checked, onDelete, label }: Props) => (
 				type='checkbox'
 				checked={checked}
 				onChange={() => onCheck(id, checked)}
+				className='h-3 w-3'
 			/>
 			<span className={checked ? "line-through" : ""}>{label}</span>
 		</div>
